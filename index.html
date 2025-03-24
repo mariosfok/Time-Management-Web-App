@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Grind</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Study Grind</h1>
+        <button id="menuBtn" class="hamburger">☰</button>
+        <nav id="menu" class="hidden">
+          <ul>
+            <li>
+              <a href="#" id="setTimer" onclick="openTimerPopup()">Set Timer</a>
+            </li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Timer Popup -->
+      <div id="overlay" class="overlay">
+        <div id="timerPopup" class="timerPopup">
+          <label for="timeInput">Enter time (in minutes):</label>
+          <input
+            type="number"
+            id="timeInput"
+            min="1"
+            placeholder="Enter minutes"
+          />
+          <div class="buttons">
+            <button onclick="startTimer()">Start</button>
+            <button id="closeSetTimer" onclick="closeTimerPopup()">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="container">
+        <div id="display">00:00</div>
+        <div id="controls">
+          <button id="startBtn" onclick="start()">Start</button>
+          <button id="stopBtn" onclick="stop()">Stop</button>
+          <button id="resetBtn" onclick="reset()">Reset</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </main>
+    <footer>Copyright © Marios Fokianos 2025.All rights reserved.</footer>
+  </body>
+</html>
