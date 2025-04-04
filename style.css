@@ -94,6 +94,7 @@ h1 {
 /* STOPWATCH */
 #container {
   display: flex;
+  width: 500px;
   flex-direction: column;
   align-items: center;
   border: 5px solid #555;
@@ -112,7 +113,19 @@ h1 {
   margin-bottom: 30px;
 }
 
+#controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
 #controls button {
+  align-items: center;
+  flex-direction: row;
+}
+
+#startBtn {
+  display: none;
   font-size: 1.8rem;
   font-weight: bold;
   padding: 15px 30px;
@@ -122,9 +135,6 @@ h1 {
   cursor: pointer;
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-#startBtn {
   background: linear-gradient(to bottom, #43a047, #2e7d32);
 }
 
@@ -134,6 +144,16 @@ h1 {
 }
 
 #stopBtn {
+  display: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   background: linear-gradient(to bottom, #e53935, #b71c1c);
 }
 
@@ -143,6 +163,15 @@ h1 {
 }
 
 #resetBtn {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   background: linear-gradient(to bottom, #039be5, #0277bd);
 }
 
