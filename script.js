@@ -61,6 +61,8 @@ function startTimer() {
       if (timeLeft <= 0) {
           clearInterval(countdown);
           alert("Time is up!");
+        
+      addMinutesToToday(minutes);
       }
       timeLeft--;
   }, 1000);

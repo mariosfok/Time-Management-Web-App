@@ -7,6 +7,8 @@
     <link rel="icon" href="clock.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="progressStyle.css" />
+  </head>
   </head>
   <body>
     <main>
@@ -41,6 +43,7 @@
           </div>
         </div>
       </div>
+      <!-- MAIN CLOCK -->
       <div id="container">
         <div id="display">00:00</div>
         <div id="controls">
@@ -49,7 +52,33 @@
           <button id="resetBtn" onclick="reset()">Reset</button>
         </div>
       </div>
+      <!-- WEEK PROGRESS BAR -->
+      <div id="progressContainer">
+        <p id="progressTitle">Progress Over The Week
+        <span class="tooltip">
+          ❓
+          <span class="tooltiptext">
+            It records the hours you complete each day.<br>
+            The system resets every week.
+          </span>
+        </span>
+      </p>
+        <div id="week">
+          <ul id="days">
+          
+            <li id="mon">Mon: 0 min</li>
+            <li id="tue">Tue: 0 min</li>
+            <li id="wed">Wed: 0 min</li>
+            <li id="thu">Thu: 0 min</li>
+            <li id="fri">Fri: 0 min</li>
+            <li id="sat">Sat: 0 min</li>
+            <li id="sun">Sun: 0 min</li>
+          </ul>
+        </div>
+      </div>
+
       <script src="script.js"></script>
+      <script src="progressScript.js"></script>
     </main>
     <footer>Copyright © Marios Fokianos 2025.All rights reserved.</footer>
   </body>

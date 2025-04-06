@@ -1,0 +1,65 @@
+#progressContainer {
+  margin-top: 120px;
+  width: 600px;
+  border: 5px solid #555;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #ffffff, #d1d9e6);
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#progressTitle {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.tooltip {
+  font-size: 0.5em;
+  padding: 1px 4px;
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+.tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 0.95em;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#days {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#days li {
+  font-size: 1.2em;
+  padding: 8px 12px;
+  background-color: #bebebe;
+  border-radius: 10px;
+}
