@@ -10,6 +10,7 @@ The main goal of this project is to assist with time management during my univer
 
 - **Timer Functionality**: Set a timer to focus on study sessions.
 - **Simple UI**: The interface is easy to use with a clean design.
+- **Progress: Tracks your daily study sessions in minutes by day.
 - **Customization**: The site is tailored to fit the specific needs of me and my friends, making it a useful tool for our study sessions.
 
 ## Future Improvements
